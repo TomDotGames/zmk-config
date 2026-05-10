@@ -81,7 +81,7 @@
     };
 
     macros {
-        altctrl: alttab {
+        altctrl: altctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -93,7 +93,7 @@
                 <&macro_press>,
                 <&kp LCTRL &mo 5>;
 
-            label = "ALTTAB";
+            label = "ALTCTRL";
             wait-ms = <15>;
             tap-ms = <30>;
         };
@@ -154,9 +154,9 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &trans  &trans         &none              &none   &none  &trans
-&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                &trans  &alttab        &altctrl           &none   &none  &trans
-&trans  &trans         &kp LC(X)       &kp LC(C)     &trans           &kp LC(V)  &kp C_MUTE  &trans  &kp RC(MINUS)  &kp LC(LS(MINUS))  &none   &none  &trans
+&trans  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &trans  &trans         &trans             &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                &trans  &alttab        &altctrl           &trans  &trans  &trans
+&trans  &trans         &kp LC(X)       &kp LC(C)     &trans           &kp LC(V)  &kp C_MUTE  &trans  &kp RC(MINUS)  &kp LC(LS(MINUS))  &trans  &trans  &trans
                        &trans          &trans        &trans           &trans                 &trans  &kp TAB        &trans             &trans
             >;
 
