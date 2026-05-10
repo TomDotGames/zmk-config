@@ -154,7 +154,7 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &trans  &trans         &trans             &trans  &trans  &trans
+&trans  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &trans  &trans         &trans             &trans  &trans  &bootloader
 &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                &trans  &alttab        &altctrl           &trans  &trans  &trans
 &trans  &trans         &kp LC(X)       &kp LC(C)     &trans           &kp LC(V)  &kp C_MUTE  &trans  &kp RC(MINUS)  &kp LC(LS(MINUS))  &trans  &trans  &trans
                        &trans          &trans        &trans           &trans                 &trans  &kp TAB        &trans             &trans
