@@ -143,21 +143,21 @@
 
         symbols {
             bindings = <
-&trans  &kp DOLLAR   &kp SLASH        &kp MINUS    &kp CARET       &none                         &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp COLON          &none
-&none   &kp HASH     &kp ASTERISK     &kp PLUS     &kp EQUAL       &none                         &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp DOUBLE_QUOTES  &none
-&trans  &kp AT_SIGN  &kp EXCLAMATION  &kp PERCENT  &kp UNDERSCORE  &none             &kp C_MUTE  &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION   &kp BACKSLASH      &trans
+&trans  &kp DOLLAR   &kp SLASH        &kp MINUS    &kp CARET       &trans                        &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp COLON          &trans
+&trans  &kp HASH     &kp ASTERISK     &kp PLUS     &kp EQUAL       &trans                        &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp DOUBLE_QUOTES  &trans
+&trans  &kp AT_SIGN  &kp EXCLAMATION  &kp PERCENT  &kp UNDERSCORE  &trans            &kp C_MUTE  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION   &kp BACKSLASH      &trans
                      &trans           &trans       &kp LESS_THAN   &kp GREATER_THAN              &trans  &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        navr {
+        nav {
             bindings = <
-&none  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &none        &none        &kp PSCRN   &kp SLCK  &kp PAUSE_BREAK  &none
-&none  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                &none        &none        &kp INSERT  &kp HOME  &kp PG_UP        &none
-&none  &none          &kp LC(X)       &kp LC(C)     &none            &kp LC(V)  &kp C_MUTE  &bootloader  &kp C_RESET  &kp DEL     &kp END   &kp PG_DN        &none
-                      &trans          &trans        &trans           &trans                 &trans       &kp TAB      &trans      &trans
+&trans  &kp PAGE_UP    &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)    &kp HOME               &trans  &trans         &none              &none   &none  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                &trans  &alttab        &altctrl           &none   &none  &trans
+&trans  &trans         &kp LC(X)       &kp LC(C)     &trans           &kp LC(V)  &kp C_MUTE  &trans  &kp RC(MINUS)  &kp LC(LS(MINUS))  &none   &none  &trans
+                       &trans          &trans        &trans           &trans                 &trans  &kp TAB        &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
