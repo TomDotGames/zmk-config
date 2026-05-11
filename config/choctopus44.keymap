@@ -90,7 +90,7 @@
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LCTRL &mo 5>;
 
             label = "ALTCTRL";
@@ -107,7 +107,7 @@
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_ALT &mo 5>;
 
             label = "ALTTAB";
