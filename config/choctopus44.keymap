@@ -121,13 +121,13 @@
 
         default_layer {
             bindings = <
-&kp GRAVE    &kp Q  &kp W         &kp F            &kp P                  &kp B                  &kp J      &kp L              &kp U              &kp Y             &kp SEMICOLON  &kp PG_UP
-&kp DELETE   &kp A  &hml LALT R   &hml LCTRL S     &hml LSHFT T           &kp G                  &kp M      &hmr RSHFT N       &hmr RCTRL E       &hmr RIGHT_ALT I  &kp O          &kp SINGLE_QUOTE
-&key_repeat  &kp Z  &kp X         &kp C            &kp D                  &kp V      &kp C_MUTE  &kp K      &kp H              &kp COMMA          &kp DOT           &kp FSLH       &kp PAGE_DOWN
-                    &kp LEFT_GUI  &thumbmod 4 ESC  &thumbmod 3 BACKSPACE  &tapcapsl              &tapcapsr  &thumbmod 2 SPACE  &thumbmod 4 ENTER  &kp RWIN
+&kp GRAVE    &kp Q  &kp W         &kp F            &kp P                  &kp B                        &kp J              &kp L              &kp U         &kp Y             &kp SEMICOLON  &kp PG_UP
+&kp DELETE   &kp A  &hml LALT R   &hml LCTRL S     &hml LSHFT T           &kp G                        &kp M              &hmr RSHFT N       &hmr RCTRL E  &hmr RIGHT_ALT I  &kp O          &kp SINGLE_QUOTE
+&key_repeat  &kp Z  &kp X         &kp C            &kp D                  &kp V            &kp C_MUTE  &kp K              &kp H              &kp COMMA     &kp DOT           &kp FSLH       &kp PAGE_DOWN
+                    &kp LEFT_GUI  &thumbmod 4 ESC  &thumbmod 3 BACKSPACE  &thumbmod 4 ESC              &thumbmod 4 ENTER  &thumbmod 2 SPACE  &tapcapsr     &kp RWIN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
